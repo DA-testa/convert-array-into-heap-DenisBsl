@@ -21,9 +21,9 @@ def main():
     data = input()
     if "F" in data:
         data = input()
-        with open("./tests/" + data) as f:
-            n = int(input())
-            data = list(map(int, input().split()))
+        with open("tests/" + data) as f:
+            n = int(f.readline())
+            data = list(map(int, f.readline().split()))
     elif "I" in data:
         n = int(input())
         data = list(map(int, input().split()))
